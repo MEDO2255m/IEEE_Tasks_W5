@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let links = document.querySelectorAll("a");
+
+        for (let i = 0; i < links.length; i++) {
+          if (
+            links[i].classList.contains("open") &&
+            links[i].textContent.trim() === "Elzero"
+          ) {
+            window.location.href = links[i].href;
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script src="T74.js"></script>
+  </body>
+</html>

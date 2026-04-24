@@ -1,0 +1,49 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: beige;
+  width: 600px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+.popup .close-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  right: -20px;
+  background-color: red;
+  border-radius: 50vw;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.close-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+}
+.popup .text p {
+  font-size: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}

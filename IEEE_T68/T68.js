@@ -1,0 +1,16 @@
+let my_id_element = document.getElementById("elzero");
+let my_class_element = document.getElementsByClassName("element");
+let my_tag_element = document.getElementsByTagName("div");
+let my_name_element = document.getElementsByName("js");
+let my_query_element1 = document.querySelector("#elzero");
+let my_query_element2 = document.querySelector(".element");
+let my_query_element3 = document.querySelector('[name="js"]');
+let my_query_element4 = document.querySelector("div");
+let my_query_all_element1 = document.querySelectorAll("#elzero");
+let my_query_all_element2 = document.querySelectorAll(".element");
+let my_query_all_element3 = document.querySelectorAll('[name = "js"]');
+let my_query_all_element4 = document.querySelectorAll("div");
+let my_body_element = document.body.firstElementChild;
+let my_children_element = document.body.children[0];
+let my_node_element = document.body.childNodes[1];
+let my_first_child = document.body.firstChild.nextSibling;

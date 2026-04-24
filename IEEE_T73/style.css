@@ -1,0 +1,13 @@
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: rgb(42, 165, 136);
+  margin-top: 20px;
+  padding: 20px;
+}
+.box {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: azure;
+}
